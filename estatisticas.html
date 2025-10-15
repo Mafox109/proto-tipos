@@ -1,0 +1,58 @@
+<h1>Estatísticas</h1>
+<p>Resumo de desempenho e indicadores do sistema.</p>
+
+<div class="row mt-4 g-3">
+    <div class="col-md-4">
+        <div class="card text-center shadow-sm border-0">
+            <div class="card-body">
+                <h5 class="card-title">Vendas no Mês</h5>
+                <p class="display-6 text-success fw-bold">+15%</p>
+                <small class="text-muted">Comparado ao mês anterior</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card text-center shadow-sm border-0">
+            <div class="card-body">
+                <h5 class="card-title">Clientes Ativos</h5>
+                <p class="display-6 fw-bold">324</p>
+                <small class="text-muted">Últimos 30 dias</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card text-center shadow-sm border-0">
+            <div class="card-body">
+                <h5 class="card-title">Produtos em Estoque</h5>
+                <p class="display-6 text-primary fw-bold">1.245</p>
+                <small class="text-muted">Itens cadastrados</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-5">
+    <canvas id="chartVendas"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+const ctx = document.getElementById('chartVendas');
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
+        datasets: [{
+            label: 'Vendas (R$)',
+            data: [12000, 15000, 14000, 18000, 21000, 19500],
+            borderWidth: 1,
+            backgroundColor: '#0077B6'
+        }]
+    },
+    options: {
+        scales: { y: { beginAtZero: true } }
+    }
+});
+</script>
