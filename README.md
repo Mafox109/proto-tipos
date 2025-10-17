@@ -30,6 +30,7 @@ Framework	Bootstrap 5.3
 Biblioteca	Chart.js (gráficos interativos)
 Hospedagem	GitHub Pages
 Layout	Responsivo e modular
+
 📂 Estrutura de Pastas
 /mfx-system-prototipo/
 │
@@ -44,33 +45,6 @@ Layout	Responsivo e modular
     ├── orcamentos.html
     ├── produtos.html
     └── funcionarios.html
-
-🚀 Como Executar
-🟢 Via GitHub Pages (recomendado)
-
-Acesse:
-
-https://SEU_USUARIO.github.io/mfx-system-prototipo/
-
-
-A tela de login será exibida.
-
-Usuário: admin
-
-Senha: 1234
-
-Após login, você será redirecionado para o painel principal com menu lateral e páginas dinâmicas.
-
-🖥️ Via Servidor Local (opcional)
-
-Se preferir rodar localmente:
-
-python -m http.server 8000
-
-
-Depois, acesse:
-
-http://localhost:8000/login.html
 
 🧩 Módulos do Sistema
 Módulo	Descrição
